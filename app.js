@@ -8,7 +8,12 @@
 
 // Program 2 - Creating generic application
 
-const name = 'Rahul'
+
+
+
+
+const name = require('./util.js')
+// const name = 'Rahul'
 
 console.log(name)
 
