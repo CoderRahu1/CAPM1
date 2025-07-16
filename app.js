@@ -1,3 +1,6 @@
+
+////////////////////////////////////////////////////////////////
+
 //  Program 1 - used for writing files using fs 
 // const fs = require('fs')  // using the require function i am getting the  library fs
 
@@ -6,16 +9,39 @@
 
 // fs.appendFileSync('notes.txt', "SAP BTP ");
 
+
+////////////////////////////////////////////////////////////////
 // Program 2 - Creating generic application
 
+// const name = require('./util.js')
+// // const name = 'Rahul'
+
+// console.log(name)
+
+/////////////////////////////////////////////////////////////////
+
+// Program 3 -> program 2 in util.js
+
+// const add  = require('./util.js');
+
+// const sum = add(4,2)
+
+// console.log(sum)
+
+////////////////////////////////////////////////////////////////
+
+// Program 4 
+
+const getNotes = require('./notes.js')
+
+const msg = getNotes()
+
+console.log(msg)
+
+// npm is the package manager that allows you to install and use 3rd party npm libraries from email to file uploading
+// npmjs.com
 
 
-
-
-const name = require('./util.js')
-// const name = 'Rahul'
-
-console.log(name)
 
 
 

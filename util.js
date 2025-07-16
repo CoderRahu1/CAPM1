@@ -1,5 +1,16 @@
-console.log('util.js')
+// Program 1 
+// console.log('util.js')
 
-const name = 'Rahul'
+// const name = 'Rahul'
 
-module.exports = name
+// module.exports = name
+
+
+// Program 2
+console.log('util.js');
+
+const add = function(a,b) {
+    return a + b;
+}
+
+module.exports = add
