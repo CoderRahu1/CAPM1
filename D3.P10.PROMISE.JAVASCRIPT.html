@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rahul Pillai's CAPM Traning</title>
+</head>
+
+<body style=background-color:lightgreen;>
+<p id="demo1">Loading training info...</p>
+<p id="demo2"></p>
+
+<script>
+
+
+// lets say we fetch data from backend and only after fetching that data we can do the rest.
+
+const myPromise = new Promise(function(myResolve,myReject)
+{
+setTimeout(function()
+
+{
+	myResolve("Rahul Pillai's CAPM Online training");
+	
+},9000);
+});
+
+myPromise.then(function(value)
+{
+
+document.getElementById("demo1").innerHTML = value;
+
+});
+
+
+</script>
+
+</body>
+
+
+</html>

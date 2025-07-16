@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> JavaScript Arrays</title>
+</head>
+<body style=background-color:lightgreen;>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+const fruits = ["Banana","Orange","Apple","Mango","DragonFruit"];
+const keys = fruits.keys();
+let text = "";
+
+for ( let x of keys )
+{
+text += x + "<br>";
+
+}
+document.getElementById("demo1").innerHTML = text;
+</script>
+</body>
+</html>

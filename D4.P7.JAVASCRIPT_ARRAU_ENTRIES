@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> JavaScript Arrays find</title>
+</head>
+<body style=background-color:lightgreen;>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+
+const fruits = ["Banana","Apple","Mango","Orange"];
+const f = fruits.entires();
+
+for ( let x of f ) {
+
+document.getElementById("demo").innerHTML += x + "<br>";
+
+}
+
+
+//document.getElementById("demo1").innerHTML = "First Number over 18 is "+ first;
+document.getElementById("demo1").innerHTML = "First Number over 18 is "+ numbers.findIndex(myfunction);
+
+
+</script>
+</body>
+</html>

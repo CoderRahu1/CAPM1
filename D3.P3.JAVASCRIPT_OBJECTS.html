@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 
+Rahul Pillai CAPM Training
+</title>
+</head>
+
+
+<body style=background-color:lightgreen;>
+<script>
+// Here person is a object and in that we added 2 property firstName,lastName.
+
+
+var person = new Object();
+person.firstName = "Rahul";
+person.lastName = "Pillai";
+document.write(person.firstName);
+
+
+// Another way of declarig the object.
+
+var person1 = new Object({
+firstName : "Suraj"
+});
+
+document.write(person1.firstName);
+
+
+// 3rd way of declaring an object
+
+var person2 = {
+firstName : "Tom",
+address : {
+	hno : 34,
+	city : "Delhi"
+}
+};
+
+
+document.write(person2.firstName); 
+
+document.write(person2.address.city);
+
+
+
+// now combining with a function.
+
+var person3 = {
+
+firstName : "Jerry",
+address : {
+	hno : 12,
+	city : "Pune"
+},
+
+getAddress : function() { 
+	return "h.no" + this.address.hno;
+	// Here this means current object.
+}
+}
+
+document.write(person3.getAddress());
+
+</script>
+
+</body>
+
+
+</html>

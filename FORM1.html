@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form Example</title>
+    <style>
+        body {
+            background-color: white;
+            color: blue;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 15px;
+            background-color: white;
+            color: blue;
+            border: 1px solid green;
+        }
+        input[type="submit"] {
+            width: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<form action="submit_form.html" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="topic">Topic of Interest:</label>
+    <select id="topic" name="topic">
+        <option value="btp">SAP BTP</option>
+        <option value="capm">CAPM</option>
+        <option value="abap">ABAP</option>
+    </select>
+
+    <label>Experience Level:</label>
+    <input type="radio" id="beginner" name="level" value="beginner" checked>
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="level" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" id="expert" name="level" value="expert">
+    <label for="expert">Expert</label>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

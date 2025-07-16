@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> JavaScript Events by Rahul Pillai</title>
+<script>
+
+function WriteName()
+{
+
+// getting empname from text below
+var empid = document.getElementById("empname"); 
+// getting welcome paragraph
+var welcome_para = document.getElementById("welcome");
+
+welcome_para.innerHTML = "Welcome to "+empid.value;
+
+}
+
+	 
+</script>
+
+
+</head>
+
+
+<body style=background-color:lightgreen;>
+<!-- Here -->
+<p id="welcome">
+</p>
+
+<form action="">
+
+<label>
+Employee Name
+</label>
+
+<input type="text" id="empname"/>
+<input type="button" value="Done" onclick="WriteName()"/>
+
+
+</form>
+
+</body>
+
+
+
+</html>

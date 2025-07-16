@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rahul Pillai's CAPM Training</title>
+</head>
+
+<body style=background-color:lightgreen;>
+
+<form>
+  <p> Rahul Pillai's CAPM Training</p>
+
+  <input type="text" id="idinput" oninput="onMyInput()" />
+  <p id="iddemo"></p>
+
+  <script>
+    // Defining function
+    function onMyInput() {
+      var x = document.getElementById("idinput").value;
+      document.getElementById("iddemo").innerHTML = x;
+    }
+  </script>
+</form>
+
+</body>
+</html>

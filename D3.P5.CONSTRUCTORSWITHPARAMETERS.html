@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rahul Pillai's CAPM Traning</title>
+</head>
+
+<body style=background-color:lightgreen;>
+<script>
+
+
+function Employee(name)
+{
+this.name = name;
+this.department = "SAPUI5";
+this.changeDepartment = function(dept){
+	return this.department = dept;
+}
+
+}
+
+
+// Constrcutors with parameters.
+
+var e1 = new Employee("Rahul");
+
+e1.changeDepartment("FIORI")
+document.write(e1.changeDepartment("FIORI"));
+
+
+
+
+</script>
+
+</body>
+
+
+</html>

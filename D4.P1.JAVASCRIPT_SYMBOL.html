@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JavaScript  Symbol </title>
+</head>
+
+<body style=background-color:lightgreen;>
+<!-- Symbol : its a premitive data type ,
+its going to represent a unique hidden identifier 
+so that no other code can accidentitly access it
+ -->
+ 
+<p id="demo"></p>
+
+<script>
+
+const person = {
+firstName : "Rahul",
+lastName : "Pillai",
+age : 25,
+eyecolor : "blue"
+}
+
+
+let id = Symbol('id');
+// Symbol is the keyword of the JavaScript.
+person[id] = 111089;
+
+document.getElementById("demo").innerHTML = person[id] + "" + person.id;
+
+// Here the value 140353 is assigned entirely to the
+// Const person and if we keep a unique code in 140353 we could know where the
+// data is coming from
+
+
+</script>
+
+
+</body>
+
+
+
+</html>

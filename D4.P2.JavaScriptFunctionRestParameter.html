@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JavaScript  function </title>
+</head>
+
+<body style=background-color:lightgreen;>
+
+ 
+<p id="demo"></p>
+
+<script>
+
+// JavaScript Rest Function
+
+function sum(...args){
+let sum = 0;
+for (let arg of args)
+sum += arg;
+
+return sum;
+}
+
+let x = sum(4,9,33,35,54,65,67,34,23,23,12);
+
+document.getElementById("demo").innerHTML =x;
+
+
+</script>
+
+
+</body>
+
+
+
+</html>
