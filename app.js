@@ -32,14 +32,41 @@
 
 // Program 4 
 
-const getNotes = require('./notes.js')
+// const getNotes = require('./notes.js')
 
-const msg = getNotes()
+// const msg = getNotes()
 
-console.log(msg)
+// console.log(msg)
 
 // npm is the package manager that allows you to install and use 3rd party npm libraries from email to file uploading
 // npmjs.com
+
+///////////////////////////////////////////////////////////////
+
+/// Program 5
+
+// const validator = require('validator')
+
+// console.log(validator.isEmail('test@gmail.com'))
+// console.log(validator.isURL('https/mead.io'))
+
+///////////////////////////////////////////////////////////////
+
+// Program 6
+// const chalk = require('chalk')
+
+// const greenmsg = chalk.green.bold('Success')
+
+// console.log(greenmsg)
+///////////////////////////////////////////////////////////////
+
+// Program 7 
+
+const chalk = require('chalk')
+  
+const greenmsg = chalk.green.inverse.bold('Success')
+console.log(greenmsg)
+
 
 
 
