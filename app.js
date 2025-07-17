@@ -72,15 +72,39 @@
 
 // Program 8
 
-console.log('Starting')
+// console.log('Starting')
 
-setTimeout(()=>{
-    console.log('2 second timer')
-}, 2000
-)
+// setTimeout(()=>{
+//     console.log('2 second timer')
+// }, 2000
+// )
 
-console.log('Stopping')
+// setTimeout(()=>{
+//     console.log('0 second timer')
+// }, 0
+// )
+
+// console.log('Stopping')
 ///////////////////////////////////////////////////////////////
+
+// Program 9 : Weather Application Data Fetching
+
+const request = require('request')
+
+const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query=New York'
+
+request({ url: url }, (error, response) => {
+
+    const data = JSON.parse(response.body)
+
+    console.log(data.location.name)
+    // console.log(response)    // this was printing whole data
+})
+
+
+    
+
+
 
 
 
