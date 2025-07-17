@@ -62,11 +62,25 @@
 
 // Program 7 
 
-const chalk = require('chalk')
+// const chalk = require('chalk')
   
-const greenmsg = chalk.green.inverse.bold('Success')
-console.log(greenmsg)
+// const greenmsg = chalk.green.inverse.bold('Success')
+// console.log(greenmsg)
 
+
+///////////////////////////////////////////////////////////////
+
+// Program 8
+
+console.log('Starting')
+
+setTimeout(()=>{
+    console.log('2 second timer')
+}, 2000
+)
+
+console.log('Stopping')
+///////////////////////////////////////////////////////////////
 
 
 
