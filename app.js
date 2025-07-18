@@ -87,7 +87,7 @@
 // console.log('Stopping')
 ///////////////////////////////////////////////////////////////
 
-// Program 9 : Weather Application Data Fetching
+// Program 9 : Weather Application consuming apis
 
 const request = require('request')
 
@@ -101,7 +101,7 @@ request({ url: url }, (error, response) => {
     // console.log(response)    // this was printing whole data
 })
 
-
+////////////////////////////////////////////////////////////
     
 
 
