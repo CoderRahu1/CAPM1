@@ -89,23 +89,30 @@
 
 // Program 9 : Weather Application consuming apis
 
+// const request = require('request')
+
+// const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query=New York'
+
+// request({ url: url }, (error, response) => {
+
+//     const data = JSON.parse(response.body)
+
+//     // console.log(data.location.name)
+//     console.log(response)    // this was printing whole data
+// })
+
+////////////////////////////////////////////////////////////
+    
+// PROGRAM 10 : Customizing above code for HTTP Request using json:true
+
 const request = require('request')
 
 const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query=New York'
 
-request({ url: url }, (error, response) => {
-
+request({url: url}, (error, response) =>{
     const data = JSON.parse(response.body)
-
-    console.log(data.location.name)
-    // console.log(response)    // this was printing whole data
+    console.log(response)
 })
-
-////////////////////////////////////////////////////////////
-    
-
-
-
 
 
 
