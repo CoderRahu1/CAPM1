@@ -105,14 +105,43 @@
     
 // PROGRAM 10 : Customizing above code for HTTP Request using json:true
 
-const request = require('request')
+// const request = require('request')
 
-const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query=New York'
+// const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query=New York'
 
-request({url: url}, (error, response) =>{
-    const data = JSON.parse(response.body)
-    console.log(response)
-})
+// request({url: url, json: true}, (error, response) =>{
+//     // const data = JSON.parse(response.body)   // no need for this since we are directly using json: true converting 
+//     // console.log(response.body.current)
+//     console.log('It is current ' + response.body.current.temperature + " degrees out. It feels like " +response.body.current.feelslike + " degress out")
+
+// })
+
+////////////////////////////////////////////////////////////
+    
+// PROGRAM 11 : Handling the error
+
+// const request = require('request')
+
+// const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query='
+
+// request({url : url, json: true}, (error,response) => {
+//     if(error) {
+//         console.log('Unable to connect to location services')
+
+//     }
+//     else if (response.body.error) {
+//         console.log('Unable to find location. Try another search.')
+//     }
+//     else {
+//         // const latitude = response.body.features[0].center[0]
+//         // const longitude = response.body.features[0].center[1]
+//         // console.log(latitude, longitude)
+//         console.log(response.body.location.name)
+//     }
+// }
+// )
+
+
 
 
 
