@@ -122,6 +122,8 @@
 
 // const request = require('request')
 
+
+
 // const url = 'http://api.weatherstack.com/current?access_key=c085b1301fd814a13bc57ab7469ce56b&query='
 
 // request({url : url, json: true}, (error,response) => {
@@ -133,13 +135,28 @@
 //         console.log('Unable to find location. Try another search.')
 //     }
 //     else {
-//         // const latitude = response.body.features[0].center[0]
-//         // const longitude = response.body.features[0].center[1]
-//         // console.log(latitude, longitude)
+
 //         console.log(response.body.location.name)
 //     }
 // }
 // )
+
+///////////////////////////////////////////////////////////////////////
+
+
+// Prorgam 12 : Callback abstraction
+
+const request = require('request')
+const forcast = require('./forecast')
+const { error } = require('console')
+
+
+
+forcast(40.714,-74.006,(error, data)=>{
+    console.log('Error', error)
+    console.log('Data',data)
+})
+
 
 
 
