@@ -162,9 +162,14 @@
 // Program 13 : Using Express js 
 
 const express = require('express')   // loading express library
-const forecast = require('./forecast')
+
+const path = require('path')
 
 const app = express()
+
+const publicdirectorypath = path.join(__dirname, './public')
+
+app.use(express.static(publicdirectorypath))
 
 app.get('', (req,res)=>{
 
