@@ -146,19 +146,64 @@
 
 // Prorgam 12 : Callback abstraction
 
-const request = require('request')
-const forcast = require('./forecast')
-const { error } = require('console')
+// const request = require('request')
+// const forcast = require('./forecast')
+// const { error } = require('console')
 
 
 
-forcast(40.714,-74.006,(error, data)=>{
-    console.log('Error', error)
-    console.log('Data',data)
+// forcast(40.714,-74.006,(error, data)=>{
+//     console.log('Error', error)
+//     console.log('Data',data)
+// })
+
+///////////////////////////////////////////////////////////////////////
+
+// Program 13 : Using Express js 
+
+const express = require('express')   // loading express library
+const forecast = require('./forecast')
+
+const app = express()
+
+app.get('', (req,res)=>{
+
+    res.send('<h1> RAHULS CAPM TRAINING</h1>')
+})
+
+// help page
+app.get('/help', (req,res)=>{
+    res.send([
+        {
+            name : 'Rahul'
+        },
+        {
+            name : 'AK'
+        }   
+    ])
+})
+
+// about page
+app.get('/about', (req,res)=>{
+    res.send('<h1>about page</h1>')
+})
+
+// weather page
+app.get('/weather', (req,res)=>{
+    res.send({
+        forecast : 'It is snowing',
+        location : 'USA'
+})
 })
 
 
+app.listen(3000, ()=>{
+    console.log('Server is up on port 3000')
+})
 
+// app.com
+// app.com/help
+// app.com/about
 
 
 
